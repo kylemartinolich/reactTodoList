@@ -1,7 +1,55 @@
 .App {
   text-align: center;
 }
+body {
+    background-color: #223a68;
+    color: white;
+}
+#head{
+    color:greenyellow;
+}
+.top-head{
+    color:rgb(241, 91, 91);
+    margin-bottom:0px;
+}
+.button{
+    color:#223a68;
+    background-color: greenyellow;
+    margin: 5px;
+    font-size:16px;
+    font-weight: bold;
+}
+input{
+    border-bottom: 5px;
+    padding:2px;
+    color:#223a68;;
+    background-color:whitesmoke;
+    font-weight: bold;
+}
+.wrapper{
+    margin:auto;
+    width:300px;
+    background-color:greenyellow;
+    text-align: center;
+}
 
+#on-list{
+    float:left;
+    text-align: center;
+    margin-right: 100px;
+}
+
+#delete{
+    display: inline;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#comp-list{
+    float:right;
+    text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
