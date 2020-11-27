@@ -17,23 +17,21 @@ class App extends Component {
     render(){
         return (
             <div className="App">
-                <h1 class='top-head'>To-Do List</h1>
+                <div class="alert alert-danger" role="alert">
+                    <h1>To-Do List</h1>
+                </div>
                 <div id='delete'>
                     <DeleteMessage deleted = {this.state.lastDelete}/>
                 </div>
                 <form onSubmit={(e) => this.addTodo(e)}>
-                <input
-                    type='text'
-                    className='input'
-                    placeholder='Enter an item...'
-                    value={this.state.task}
+                <input class="form-control input" type="text" placeholder='Enter an item...' value={this.state.task}
                     onChange={
                             (e) => this.setState({task: e.target.value})
                     }
                 />
-                <button type = 'submit' class='button'>Add Todo</button>
+                <button type="submit" class="btn btn-success">Add Todo</button>
                 </form>
-                <div class='wrapper'>
+                <div id='wrapper'>
                     <div id='on-list'>
                         <TaskList title={'Pending Todo'} buttonText={'Done'} tasks={this.state.todolist} buttonFunction={this.removeTodo}/>
                     </div> 
